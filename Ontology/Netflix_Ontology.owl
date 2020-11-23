@@ -1,0 +1,284 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/swetamankala/ontologies/2020/10/untitled-ontology-3"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/swetamankala/ontologies/2020/10/untitled-ontology-3">
+    <Prefix name="" IRI="http://www.semanticweb.org/swetamankala/ontologies/2020/10/untitled-ontology-3#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#Director"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Movie"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Person"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TV_Show"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Type"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Viewer"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#directed_by"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#directs"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#is"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#watches"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#cast"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#country"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#director"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#rating"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#title"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#type"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Director_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Director_2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Eat_Pray_Love"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Sin_City"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Stranger_Things"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Viewer_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Viewer_2"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#Director"/>
+        <Class IRI="#Person"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Movie"/>
+        <Class IRI="#Type"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TV_Show"/>
+        <Class IRI="#Type"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Viewer"/>
+        <Class IRI="#Person"/>
+    </SubClassOf>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#directs"/>
+            <Class IRI="#Movie"/>
+        </ObjectSomeValuesFrom>
+        <NamedIndividual IRI="#Director_1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#is"/>
+            <Class IRI="#Director"/>
+        </ObjectSomeValuesFrom>
+        <NamedIndividual IRI="#Director_1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#directed_by"/>
+            <Class IRI="#Director"/>
+        </ObjectSomeValuesFrom>
+        <NamedIndividual IRI="#Eat_Pray_Love"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#is"/>
+            <Class IRI="#Movie"/>
+        </ObjectSomeValuesFrom>
+        <NamedIndividual IRI="#Eat_Pray_Love"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#directed_by"/>
+            <Class IRI="#Director"/>
+        </ObjectSomeValuesFrom>
+        <NamedIndividual IRI="#Sin_City"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#is"/>
+            <Class IRI="#Movie"/>
+        </ObjectSomeValuesFrom>
+        <NamedIndividual IRI="#Sin_City"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#directed_by"/>
+            <Class IRI="#Director"/>
+        </ObjectSomeValuesFrom>
+        <NamedIndividual IRI="#Stranger_Things"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#is"/>
+            <Class IRI="#TV_Show"/>
+        </ObjectSomeValuesFrom>
+        <NamedIndividual IRI="#Stranger_Things"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#watches"/>
+            <Class IRI="#TV_Show"/>
+        </ObjectSomeValuesFrom>
+        <NamedIndividual IRI="#Viewer_1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#watches"/>
+            <Class IRI="#Movie"/>
+        </ObjectSomeValuesFrom>
+        <NamedIndividual IRI="#Viewer_2"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#directs"/>
+        <NamedIndividual IRI="#Director_1"/>
+        <NamedIndividual IRI="#Eat_Pray_Love"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#directs"/>
+        <NamedIndividual IRI="#Director_2"/>
+        <NamedIndividual IRI="#Stranger_Things"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#watches"/>
+        <NamedIndividual IRI="#Viewer_1"/>
+        <NamedIndividual IRI="#Stranger_Things"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#watches"/>
+        <NamedIndividual IRI="#Viewer_2"/>
+        <NamedIndividual IRI="#Eat_Pray_Love"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#director"/>
+        <NamedIndividual IRI="#Director_1"/>
+        <Literal>Ryan Murphy</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#director"/>
+        <NamedIndividual IRI="#Director_2"/>
+        <Literal>Duffer Brothers</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#cast"/>
+        <NamedIndividual IRI="#Stranger_Things"/>
+        <Literal>Winona Ryder</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#country"/>
+        <NamedIndividual IRI="#Stranger_Things"/>
+        <Literal>United States</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#rating"/>
+        <NamedIndividual IRI="#Stranger_Things"/>
+        <Literal>TV-14</Literal>
+    </DataPropertyAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#directed_by"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#directs"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#is"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#watches"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#cast"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#country"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#director"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#rating"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#title"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#type"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <DataPropertyRange>
+        <DataProperty IRI="#cast"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#country"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#director"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#rating"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#title"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#type"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
